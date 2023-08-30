@@ -1,0 +1,4 @@
+[
+	{"Name":"test1","FindRegex":"test2","ReplaceString":"test3"},
+	{"Name":"testa","FindRegex":"testb","ReplaceString":"testc"}
+]
