@@ -2,10 +2,10 @@
 
 A .NET Framework library to apply RegEx search/replace rules and/or log strings after being injected into a DLL/EXE
 
-![](screenshots\Add%20Library.png)
-![](screenshots\ILCode.png)
+![](screenshots/Add%20Library.png)
+![](screenshots/ILCode.png)
 
-Rules: [rules.json](ThickClientUtils\rules.json)
+Rules: [rules.json](ThickClientUtils/rules.json)
 
 Instructions:
 - Build the library in Visual Studio (I used VS 2022 with .NET Framework 4.6.2)
