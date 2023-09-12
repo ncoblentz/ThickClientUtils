@@ -7,7 +7,7 @@ A .NET Framework library to apply RegEx search/replace rules and/or log strings 
 
 Rules: [rules.json](ThickClientUtils/rules.json)
 
-Instructions:
+## Instructions
 - Build the library in Visual Studio (I used VS 2022 with .NET Framework 4.6.2)
 - Copy `ThickClientUtils\bin\Debug` to the folder in which the thick-client resides
 - Edit rules.json (in that target folder you just copied everything to) to add you find/replace rules
@@ -28,3 +28,8 @@ Instructions:
     - `ldloc.0`
     - `call	void ThickClientUtils.Logger::Log(string)`
   - Find the log file at `<directory you copied it to>/logs/<datetime>.log`
+ 
+## Troubleshooting
+The `nlog.config` file tries to safe the log files in the `<current directory>/logs/<date>.log`. If the current directory is not writable by your user, it will crash. Edit the `nlog.config` file and change the location it should save to if necessary.
+
+If you experience other unexplained crashes, use DnspyEx to set a breakpoint on the `ApplyRules` and `Log` methods and troubleshoot from there.
