@@ -30,6 +30,6 @@ Rules: [rules.json](ThickClientUtils/rules.json)
   - Find the log file at `<directory you copied it to>/logs/<datetime>.log`
  
 ## Troubleshooting
-The `nlog.config` file tries to safe the log files in the `<current directory>/logs/<date>.log`. If the current directory is not writable by your user, it will crash. Edit the `nlog.config` file and change the location it should save to if necessary.
+The `nlog.config` file tries to save the log files in the `<current directory>/logs/<date>.log`. If the current directory is not writable by your user, it will crash. Edit the `nlog.config` file and change the location it should save to if necessary.
 
 If you experience other unexplained crashes, use DnspyEx to set a breakpoint on the `ApplyRules` and `Log` methods and troubleshoot from there.
