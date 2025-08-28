@@ -27,7 +27,10 @@ namespace ThickClientUtils
 
             foreach (Rule rule in rules)
             {
-                content = Regex.Replace(content, rule.FindRegex, rule.ReplaceString);
+                if (rule.Enabled)
+                {
+                    content = Regex.Replace(content, rule.FindRegex, rule.ReplaceString);
+                }
             }
 
             Logger.Log("After: " + content, 3);
